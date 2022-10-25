@@ -7,6 +7,8 @@ TagManager:
   - GwangMul
   - DDang
   - NPC
+  - floor
+  - map
   layers:
   - Default
   - TransparentFX
