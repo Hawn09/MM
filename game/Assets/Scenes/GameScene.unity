@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 381757154}
   m_Layer: 10
   m_Name: rail2
-  m_TagString: floor
+  m_TagString: rail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -646,7 +646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 772642041}
   - component: {fileID: 772642040}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: factory2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1261,7 +1261,7 @@ GameObject:
   - component: {fileID: 1653388278}
   m_Layer: 10
   m_Name: rail1
-  m_TagString: floor
+  m_TagString: rail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1623,7 +1623,7 @@ GameObject:
   - component: {fileID: 1772763316}
   - component: {fileID: 1772763315}
   - component: {fileID: 1772763314}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: factory_1
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -1728,7 +1728,7 @@ GameObject:
   - component: {fileID: 1963826514}
   - component: {fileID: 1963826513}
   - component: {fileID: 1963826512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: middle_rail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
