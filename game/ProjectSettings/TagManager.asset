@@ -9,6 +9,11 @@ TagManager:
   - NPC
   - floor
   - map
+  - rail
+  - TransportPlane
+  - StoragePlane
+  - SellPlane
+  - MinePlane
   layers:
   - Default
   - TransparentFX
