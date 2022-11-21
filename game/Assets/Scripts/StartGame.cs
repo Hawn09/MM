@@ -14,9 +14,14 @@ public class StartGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("GameScene");
-        }
+        
+    }
+    public void ToGameScene()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
