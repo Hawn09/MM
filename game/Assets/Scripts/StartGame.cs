@@ -20,6 +20,14 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+    public void ToStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+    public void ToLobbyScene()
+    {
+        SceneManager.LoadScene("LobbyScene");
+    }
     public void ExitGame()
     {
         Application.Quit();

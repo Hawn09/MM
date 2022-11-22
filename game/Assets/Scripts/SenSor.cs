@@ -7,11 +7,12 @@ using UnityEngine;
 public class SenSor : MonoBehaviour
 {
     
+
     public bool detect = false;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class SenSor : MonoBehaviour
         {
             detect = true;
             Debug.Log("detect =" + detect);
+            
         }
         
     }

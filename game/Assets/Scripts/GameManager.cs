@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static int money;
+    public static int Amount;
+    public static int SellPrice;
+    
     // Start is called before the first frame update
     void Start()
     {
