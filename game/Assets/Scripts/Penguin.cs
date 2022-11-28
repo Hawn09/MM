@@ -12,6 +12,11 @@ public class Penguin : MonoBehaviour
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();
+<<<<<<< Updated upstream
+=======
+        //GameObject child = transform.Find("Sensor").gameObject;
+
+>>>>>>> Stashed changes
     }
 
 
@@ -31,9 +36,31 @@ public class Penguin : MonoBehaviour
         }
         else if (transform.position.x < -9)
         {
+<<<<<<< Updated upstream
             forward = 1;
             rend.flipX = false;
         }
     }
+=======
 
-}  
+
+            if (transform.position.x > 9)
+            {
+                forward = -1;
+
+                rend.flipX = true;
+            }
+            else if (transform.position.x < -9)
+            {
+
+
+                forward = 1;
+
+                rend.flipX = false;
+            }
+>>>>>>> Stashed changes
+
+        }
+
+    }
+}

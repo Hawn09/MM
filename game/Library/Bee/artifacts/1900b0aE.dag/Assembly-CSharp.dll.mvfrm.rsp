@@ -105,4 +105,8 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VirtualTexturingModule.dll_7792C8ED0AC4
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_C3AB791171F5D382.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_F8B3398ACB1068DE.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_F66A3C15FB3020E0.mvfrm
+<<<<<<< Updated upstream
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_A24B4EC1E58E2661.mvfrm
+=======
+Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_39D439B8368FABE0.mvfrm
+>>>>>>> Stashed changes

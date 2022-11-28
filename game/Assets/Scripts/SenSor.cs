@@ -6,7 +6,17 @@ using UnityEngine;
 
 public class SenSor : MonoBehaviour
 {
+<<<<<<< Updated upstream
     
+=======
+
+    public bool find = false;
+    public float Speed = 0.01f;
+    float forward = 1f;
+    float time = 0.0f;
+    public Transform parent;
+
+>>>>>>> Stashed changes
     public bool detect = false;
     // Start is called before the first frame update
     void Start()
@@ -25,13 +35,37 @@ public class SenSor : MonoBehaviour
         {
             detect = true;
             Debug.Log("detect =" + detect);
+<<<<<<< Updated upstream
+=======
+
+            findpeng = Instantiate(prefab, parent);
+
+
+>>>>>>> Stashed changes
         }
-        
+
     }
     void FixedUpdate()
     {
+<<<<<<< Updated upstream
         
         
+=======
+        if (find == false)
+        {
+            transform.position += new Vector3(forward * Speed, 0, 0);
+            if (transform.position.x > 9)
+            {
+                forward = -1;
+
+            }
+            else if (transform.position.x < -9)
+            {
+                forward = 1;
+
+            }
+        }
+
+>>>>>>> Stashed changes
     }
 }
-
