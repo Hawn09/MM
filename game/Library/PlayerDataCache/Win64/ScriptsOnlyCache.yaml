@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GameManager
     - Penguin
     - SenSor
     - StartGame
@@ -60,10 +61,19 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
+    methodName: ToStartScene
+  - assembly: Assembly-CSharp
+    fullTypeName: StartGame
     methodName: ExitGame
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: ToGameScene
+  - assembly: Assembly-CSharp
+    fullTypeName: StartGame
+    methodName: ToGameScene
+  - assembly: Assembly-CSharp
+    fullTypeName: StartGame
+    methodName: ToLobbyScene
   sceneClasses:
     Assets/Scenes/GameScene.unity:
     - Class: 1
@@ -114,6 +124,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3184}
     - Class: 114
       Script: {instanceID: 4444}
+    - Class: 114
+      Script: {instanceID: 4626}
     - Class: 114
       Script: {instanceID: 4802}
     - Class: 114
@@ -246,9 +258,35 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1546}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3184}
+    - Class: 114
+      Script: {instanceID: 3930}
+    - Class: 114
+      Script: {instanceID: 5326}
+    - Class: 114
+      Script: {instanceID: 5944}
+    - Class: 114
+      Script: {instanceID: 6098}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1219,7 +1257,7 @@ ScriptsOnlyBuild:
     className: VertexZoom
   - hash:
       serializedVersion: 2
-      Hash: 13f8f373b951cbaf0f891949929b196a
+      Hash: ab02feacf1d1ca3ed344cce31366564c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Penguin
@@ -1264,4 +1302,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LobbyScene.unity
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/StartScene.unity
-  playerPath: C:/Users/USER/Desktop/111/game.exe
+  playerPath: "C:/Users/620-43/Desktop/\uBE44\uB458\uAE30/game.exe"
