@@ -16,7 +16,7 @@ public class Penguin : MonoBehaviour
     {
         rend = GetComponent<SpriteRenderer>();
         //GameObject child = transform.Find("Sensor").gameObject;
-        
+
     }
 
 
@@ -32,24 +32,24 @@ public class Penguin : MonoBehaviour
     {
         if (find == false)
         {
-            transform.position += new Vector3(forward * Speed, 0, 0);
+
+
             if (transform.position.x > 9)
             {
                 forward = -1;
+
                 rend.flipX = true;
             }
             else if (transform.position.x < -9)
             {
+
+
                 forward = 1;
+
                 rend.flipX = false;
             }
-        } 
-        
-        
-    }
-    public void pengguinmove()
-    {
-        
-    }
 
-}  
+        }
+
+    }
+}

@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - SenSor
     - StartGame
     - Transport
+    - finded_penguin
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -15,6 +16,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -67,13 +70,19 @@ ScriptsOnlyBuild:
     methodName: ExitGame
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
-    methodName: ToGameScene
+    methodName: ToStartScene
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
-    methodName: ToGameScene
+    methodName: ToGameScene2
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: ToLobbyScene
+  - assembly: Assembly-CSharp
+    fullTypeName: StartGame
+    methodName: ToGameScene3
+  - assembly: Assembly-CSharp
+    fullTypeName: StartGame
+    methodName: ToGameScene
   sceneClasses:
     Assets/Scenes/GameScene.unity:
     - Class: 1
@@ -123,21 +132,189 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 4444}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 4626}
+      Script: {instanceID: 4446}
     - Class: 114
-      Script: {instanceID: 4802}
+      Script: {instanceID: 4628}
     - Class: 114
-      Script: {instanceID: 5326}
+      Script: {instanceID: 4804}
     - Class: 114
-      Script: {instanceID: 5944}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 6098}
+      Script: {instanceID: 5946}
     - Class: 114
-      Script: {instanceID: 6444}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 8102}
+      Script: {instanceID: 6446}
+    - Class: 114
+      Script: {instanceID: 8104}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/GameScene_2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1546}
+    - Class: 114
+      Script: {instanceID: 2652}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3184}
+    - Class: 114
+      Script: {instanceID: 3234}
+    - Class: 114
+      Script: {instanceID: 4446}
+    - Class: 114
+      Script: {instanceID: 4628}
+    - Class: 114
+      Script: {instanceID: 4804}
+    - Class: 114
+      Script: {instanceID: 5328}
+    - Class: 114
+      Script: {instanceID: 5946}
+    - Class: 114
+      Script: {instanceID: 6100}
+    - Class: 114
+      Script: {instanceID: 6446}
+    - Class: 114
+      Script: {instanceID: 8104}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/GameScene_3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1546}
+    - Class: 114
+      Script: {instanceID: 2652}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3184}
+    - Class: 114
+      Script: {instanceID: 3234}
+    - Class: 114
+      Script: {instanceID: 4446}
+    - Class: 114
+      Script: {instanceID: 4628}
+    - Class: 114
+      Script: {instanceID: 4804}
+    - Class: 114
+      Script: {instanceID: 5328}
+    - Class: 114
+      Script: {instanceID: 5946}
+    - Class: 114
+      Script: {instanceID: 6100}
+    - Class: 114
+      Script: {instanceID: 6446}
+    - Class: 114
+      Script: {instanceID: 8104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -198,21 +375,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3930}
+      Script: {instanceID: 3932}
     - Class: 114
-      Script: {instanceID: 4152}
+      Script: {instanceID: 4154}
     - Class: 114
-      Script: {instanceID: 4264}
+      Script: {instanceID: 4266}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 4542}
     - Class: 114
-      Script: {instanceID: 5326}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 5944}
+      Script: {instanceID: 5946}
     - Class: 114
-      Script: {instanceID: 6098}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 6444}
+      Script: {instanceID: 6446}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -261,17 +438,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1546}
     - Class: 114
+      Script: {instanceID: 2652}
+    - Class: 114
       Script: {instanceID: 2880}
     - Class: 114
       Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3930}
+      Script: {instanceID: 3932}
     - Class: 114
-      Script: {instanceID: 5326}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 5944}
+      Script: {instanceID: 5946}
     - Class: 114
-      Script: {instanceID: 6098}
+      Script: {instanceID: 6100}
+    - Class: 114
+      Script: {instanceID: 6446}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -538,6 +719,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: finded_penguin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnInputFieldValueChangedMessageListener
@@ -753,7 +940,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 27b67ec2ed7c59cd87e5f69553a94866
+      Hash: e28878adece107f0d5f81a557ce1cd3a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SenSor
@@ -1300,6 +1487,8 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/LobbyScene.unity
-  - Assets/Scenes/GameScene.unity
   - Assets/Scenes/StartScene.unity
-  playerPath: "C:/Users/620-43/Desktop/\uBE44\uB458\uAE30/game.exe"
+  - Assets/Scenes/GameScene.unity
+  - Assets/Scenes/GameScene_2.unity
+  - Assets/Scenes/GameScene_3.unity
+  playerPath: "C:/Users/620-43/Desktop/\uC9C1\uBC15\uAD6C\uB9AC/game.exe"
