@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-C:\Users\USER\Desktop\MM-1114_jhh\MM-1114_jhh\game
-=======
 C:\Users\USER\Documents\GitHub\MM\game
->>>>>>> Stashed changes

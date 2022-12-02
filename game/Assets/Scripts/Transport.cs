@@ -17,12 +17,12 @@ public class Transport : MonoBehaviour
     void FixedUpdate()
     {
         transform.position += new Vector3(forward * Speed, 0, 0);
-        if (transform.position.x > 9)
+        if (transform.position.x > 3)
         {
             forward = -1;
             rend.flipX = true;
         }
-        else if (transform.position.x < -9)
+        else if (transform.position.x < -3)
         {
             forward = 1;
             rend.flipX = false;

@@ -20,6 +20,22 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+    public void ToGameScene2()
+    {
+        SceneManager.LoadScene("GameScene_2");
+    }
+    public void ToGameScene3()
+    {
+        SceneManager.LoadScene("GameScene_3");
+    }
+    public void ToStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+    public void ToLobbyScene()
+    {
+        SceneManager.LoadScene("LobbyScene");
+    }
     public void ExitGame()
     {
         Application.Quit();
