@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameButton : MonoBehaviour
 {
@@ -19,5 +20,17 @@ public class GameButton : MonoBehaviour
     {
         Debug.Log("Button Clicked");
 
+    }
+    public void ToPeng()
+    {
+        Spawn.spawnnum = 1;
+    }
+    public void Torail()
+    {
+        Spawn.spawnnum = 2;
+    }
+    public void Totonglo()
+    {
+        Spawn.spawnnum = 3;
     }
 }

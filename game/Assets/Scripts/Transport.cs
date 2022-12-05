@@ -7,6 +7,7 @@ public class Transport : MonoBehaviour
     public float Speed = 0.01f;
     float forward = 1f;
     SpriteRenderer rend;
+    public float location;
     // Start is called before the first frame update
     void Start()
     {
