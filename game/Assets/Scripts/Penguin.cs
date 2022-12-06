@@ -6,7 +6,7 @@ public class Penguin : MonoBehaviour
 {
     public bool find = false;
     public float Speed = 0.01f;
-    float forward = 1f;
+    
     SpriteRenderer rend;
     float timer;
 
@@ -36,7 +36,7 @@ public class Penguin : MonoBehaviour
 
             if (transform.position.x > 9)
             {
-                forward = -1;
+                
 
                 rend.flipX = true;
             }
@@ -44,7 +44,7 @@ public class Penguin : MonoBehaviour
             {
 
 
-                forward = 1;
+                
 
                 rend.flipX = false;
             }

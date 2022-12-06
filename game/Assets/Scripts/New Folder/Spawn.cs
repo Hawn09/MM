@@ -39,7 +39,8 @@ public class Spawn : MonoBehaviour
             mPos3D.z = Camera.main.transform.position.z + 20;
 
             Vector3 mPos2D = Camera.main.ScreenToWorldPoint(mPos3D);
-            
+            mPos2D.y = 4;
+
 
 
             if (Input.GetMouseButtonDown(0))
@@ -55,6 +56,10 @@ public class Spawn : MonoBehaviour
             mPos3D.z = Camera.main.transform.position.z + 20;
 
             Vector3 mPos2D = Camera.main.ScreenToWorldPoint(mPos3D);
+            if(mPos2D.y > 2)
+            {
+                mPos2D.y = 2;
+            }
             
 
 

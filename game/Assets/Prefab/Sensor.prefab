@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   find: 0
   Speed: 0.05
-  parent: {fileID: 0}
+  parent: {fileID: 3528141265428965369}
   detect: 0
   prefab: {fileID: 481166603184392146, guid: eb7b0a2590f0ea34aa5544cb81b58efb, type: 3}
 --- !u!54 &3528141265135681381

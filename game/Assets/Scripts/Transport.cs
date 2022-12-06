@@ -8,28 +8,48 @@ public class Transport : MonoBehaviour
     float forward = 1f;
     SpriteRenderer rend;
     public float location;
+    float posx;
+
     // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();
+        posx = transform.position.x;
     }
 
 
     void FixedUpdate()
     {
         transform.position += new Vector3(forward * Speed, 0, 0);
-        if (transform.position.x > 3)
+        if(posx > 3)
         {
-            forward = -1;
-            rend.flipX = true;
-        }
-        else if (transform.position.x < -3)
-        {
-            forward = 1;
-            rend.flipX = false;
+            if (transform.position.x > posx)
+            {
+                forward = -1;
+                rend.flipX = true;
+            }
+            else if (transform.position.x < 3)
+            {
+                forward = 1;
+                rend.flipX = false;
+            }
         }
 
-        
+        if (posx < 3)
+        {
+            if (transform.position.x > 3)
+            {
+                forward = -1;
+                rend.flipX = true;
+            }
+            else if (transform.position.x < posx)
+            {
+                forward = 1;
+                rend.flipX = false;
+            }
+        }
+
+
 
     }
 }
