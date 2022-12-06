@@ -36,6 +36,10 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("LobbyScene");
     }
+    public void GameExp()
+    {
+        SceneManager.LoadScene("GameExp");
+    }
     public void ExitGame()
     {
         Application.Quit();
