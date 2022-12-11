@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6085387751844307029}
   - component: {fileID: 6085387751844307028}
   - component: {fileID: 1646992462617623286}
+  - component: {fileID: -495903694908332159}
   m_Layer: 10
   m_Name: ddol 1
   m_TagString: GwangMul
@@ -115,3 +116,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-495903694908332159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085387751844307031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284e9285bf1b102489304ee1401c58d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

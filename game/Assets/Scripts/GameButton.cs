@@ -24,13 +24,16 @@ public class GameButton : MonoBehaviour
     public void ToPeng()
     {
         Spawn.spawnnum = 1;
+        MoneyController.money -= 500;
     }
     public void Torail()
     {
         Spawn.spawnnum = 2;
+        MoneyController.money -= 1000;
     }
     public void Totonglo()
     {
         Spawn.spawnnum = 3;
+        MoneyController.money -= 100;
     }
 }

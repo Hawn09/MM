@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    public Text moneytext;
-    public int money;
+    
+    public static int money;
     public int Amount;
     public int SellPrice;
 
@@ -22,18 +22,15 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SetText();
+        
     }
 
     public void Getmoney()
     {
         money += 100;
-        SetText();
+        
     }
 
-    public void SetText()
-    {
-        text.text = "µ· : " + money.ToString();
-    }
+    
 }
 

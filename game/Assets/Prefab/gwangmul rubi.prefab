@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5984818729720963828}
   - component: {fileID: 5984818729720963829}
   - component: {fileID: 1271899574300567549}
+  - component: {fileID: 644614691809845122}
   m_Layer: 10
   m_Name: gwangmul rubi
   m_TagString: GwangMul
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5984818729720963830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2703357, y: -0.6834555, z: 0}
+  m_LocalPosition: {x: -1.5489471, y: -2.705178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -116,3 +117,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &644614691809845122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5984818729720963830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a30a29d2f01c206438f21983fd8b0e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

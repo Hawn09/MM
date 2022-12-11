@@ -1,53 +1,86 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class mine : MonoBehaviour
 {
-    GameObject Obj_Field;            //배경 판넬 참조할 게임 오브젝트
-
-    Image image;                        //판네의 이미지 값을 참조할 이미지 UI
-
-
-
-    void Start()        //게임이 실행하면
-
+    bool mining = false;
+    float time = 0.0f;
+    static float limittime = 5f;
+    public static int danga = 2000;
+    void Start() 
     {
-
-        Obj_Field = GameObject.Find("gwangmul rubi");            //Field 이름을 찾아 오브젝트 참조
-
-        image = Obj_Field.GetComponent<Image>();  //참조한 오브젝트의 이미지를 컴포넌트 
 
     }
-
-
-
-    void Update()
-
+    void FixedUpdate()
     {
-
-        if (Obj_Field.activeSelf)                                //게임 오브젝트가 참이면
-
+        if(mining==true)
         {
+            time += Time.deltaTime;
 
-            Color color = image.color;        //오브젝트 이미지의 컬러를 새로 선언한 컬러로 참조
-
-
-
-            //알파값을 내려주기 위해 1에서 0으로 for문 반복
-
-            for (float i = 1.0f; i >= 0.0f; i -= 0.01f)
-
+            if (time >= limittime)
             {
-
-                color.a = i;                   //i가 내려가면서 선언한 컬러의 알파 값에 참조
-
-                image.color = color;       //i로 인해 내려간 알파 값을 다시 오브젝트 이미지에 참조
-
+                MoneyController.money += danga;
+                Destroy(gameObject);
+                
+                Debug.Log("Destroyed");
             }
-
+        }
+    }
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "rail")
+        {
+            mining = true;
+            Debug.Log("mining" + mining);
+            
         }
 
     }
+    
+    /*public float FadeTime = 2f; // Fade효과 재생시간
+    Image fadeImg;
+    float start;
+    float end;
+    float time = 0f;
+    bool isPlaying = false;
+    void Awake()
+    {
+        fadeImg = GetComponent<Image>();
+        InStartFadeAnim();
+    }
+    public void OutStartFadeAnim()
+    {
+        if (isPlaying == true) //중복재생방지
+        {
+            return;
+        }
+        start = 1f;
+        end = 0f;
+        StartCoroutine("fadeoutplay");    //코루틴 실행
+    }
+    public void InStartFadeAnim()
+    {
+        if (isPlaying == true) //중복재생방지
+        {
+            return;
+        }
+        StartCoroutine("fadeIntanim");
+    }
+    IEnumerator fadeoutplay()
+    {
+        isPlaying = true;
+        Color fadecolor = fadeImg.color;
+        time = 0f;
+        color.a = Mathf.Lerp(start, end, time);
+        while (fadecolor.a > 0f)
+        {
+            time += Time.deltaTime / FadeTime;
+            fadecolor.a = Mathf.Lerp(start, end, time);
+            fadeImg.color = fadecolor;
+            yield return null;
+        }
+        isPlaying = false;
+
+    }*/
 }
-*/

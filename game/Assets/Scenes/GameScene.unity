@@ -318,8 +318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ae5be56ecb19e43b8990b2b41eedc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneytext: {fileID: 0}
-  money: 2000
   Amount: 0
   SellPrice: 0
 --- !u!1001 &204977252
@@ -335,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6899396163147279187, guid: 096b0b329b46c0843865e884f235c0e2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6899396163147279187, guid: 096b0b329b46c0843865e884f235c0e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -389,6 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 322827088}
   - component: {fileID: 322827089}
+  - component: {fileID: 322827090}
   m_Layer: 0
   m_Name: PenSpawner
   m_TagString: Untagged
@@ -426,6 +425,19 @@ MonoBehaviour:
   peng: {fileID: 3528141265135681379, guid: b7756df2dd97afd4a844e1f54b172847, type: 3}
   rail: {fileID: 5347738562908210682, guid: d6bba703b86a78345ae7e09ed95291ec, type: 3}
   tonglo: {fileID: 7576097391633855398, guid: 0a4b80c50e5303f45a31fef188a3dc86, type: 3}
+--- !u!114 &322827090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322827086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd3a5cc12688054aba212a5fb865b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextTMP: {fileID: 1458671752}
 --- !u!1 &352078682
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +594,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6564804063529624260, guid: 8c346b7208538f74ca18bbb9db2becd4, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6564804063529624260, guid: 8c346b7208538f74ca18bbb9db2becd4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -941,7 +953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7549725767874082771, guid: f2f10cd5e29dfde4ea7485546d984315, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7549725767874082771, guid: f2f10cd5e29dfde4ea7485546d984315, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1700,7 +1712,7 @@ GameObject:
   - component: {fileID: 1458671753}
   - component: {fileID: 1458671752}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)ui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
