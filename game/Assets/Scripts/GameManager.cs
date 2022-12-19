@@ -31,6 +31,13 @@ public class GameManager : MonoBehaviour
         
     }
 
+<<<<<<< Updated upstream
     
+=======
+    public void SetText()
+    {
+        //text.text = "µ· : " + money.ToString();
+    }
+>>>>>>> Stashed changes
 }
 
